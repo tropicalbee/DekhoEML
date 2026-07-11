@@ -1,0 +1,84 @@
+<svg width="800" height="220" viewBox="0 0 800 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="800" y2="220" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </linearGradient>
+
+    <!-- Subtle Dot Grid Pattern -->
+    <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="3" cy="3" r="1" fill="#334155" fill-opacity="0.25"/>
+    </pattern>
+  </defs>
+
+  <!-- Base Card -->
+  <rect width="100%" height="100%" rx="12" fill="url(#bgGrad)" stroke="#1e293b" stroke-width="1.5"/>
+  <rect width="100%" height="100%" rx="12" fill="url(#dotGrid)"/>
+
+  <!-- LEFT COLUMN: Brand & Features -->
+  <g transform="translate(50, 45)">
+    <!-- Brand Icon -->
+    <g transform="translate(0, 0)">
+      <rect width="42" height="42" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <path d="M12 14h18c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H12c-1.1 0-2-.9-2-2V16c0-1.1.9-2 2-2z" stroke="#3b82f6" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M32 16l-9 6-9-6" stroke="#3b82f6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M21 24.5v3m-3.5-1.5h7" stroke="#10b981" stroke-width="2" stroke-linecap="round"/>
+    </g>
+
+    <!-- Typography -->
+    <text x="56" y="28" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="700" letter-spacing="-0.5px">DekhoEML</text>
+    <text x="0" y="68" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400">Offline Client-Side Email &amp; Attachment Reader</text>
+
+    <!-- Corrected Badge Grouping (with expanded horizontal padding and widths) -->
+    <g transform="translate(0, 92)">
+      <!-- Badge 1: 100% Offline (Width: 110px) -->
+      <rect x="0" y="0" width="110" height="22" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="12" cy="11" r="3" fill="#10b981"/>
+      <text x="24" y="15" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" letter-spacing="0.2px">100% OFFLINE</text>
+
+      <!-- Badge 2: Local Memory (Shifted to x="120" with Width: 120px) -->
+      <rect x="120" y="0" width="120" height="22" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="132" cy="11" r="3" fill="#3b82f6"/>
+      <text x="144" y="15" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" letter-spacing="0.2px">LOCAL MEMORY</text>
+
+      <!-- Badge 3: Sandboxed (Shifted to x="250" with Width: 100px) -->
+      <rect x="250" y="0" width="100" height="22" rx="4" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <circle cx="262" cy="11" r="3" fill="#818cf8"/>
+      <text x="274" y="15" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" letter-spacing="0.2px">SANDBOXED</text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: Stylized Document Mockup Interface -->
+  <g transform="translate(480, 35)">
+    <!-- Main UI Frame -->
+    <rect width="270" height="150" rx="8" fill="#090d16" fill-opacity="0.8" stroke="#1e293b" stroke-width="1.5"/>
+    
+    <!-- Top Mock Browser Bar -->
+    <path d="M0,24 L270,24" stroke="#1e293b" stroke-width="1.2"/>
+    <circle cx="12" cy="12" r="4" fill="#ef4444"/>
+    <circle cx="24" cy="12" r="4" fill="#f59e0b"/>
+    <circle cx="36" cy="12" r="4" fill="#10b981"/>
+    <rect x="60" y="6" width="150" height="12" rx="3" fill="#1e293b"/>
+    <text x="135" y="15" fill="#64748b" font-family="monospace" font-size="8" text-anchor="middle">dekhoeml::reader</text>
+
+    <!-- Simulated UI Layout Lines -->
+    <rect x="16" y="38" width="30" height="8" rx="2" fill="#1e293b"/>
+    <rect x="52" y="38" width="120" height="8" rx="2" fill="#1e293b" fill-opacity="0.5"/>
+    
+    <rect x="16" y="52" width="30" height="8" rx="2" fill="#1e293b"/>
+    <rect x="52" y="52" width="90" height="8" rx="2" fill="#1e293b" fill-opacity="0.5"/>
+    
+    <path d="M16,68 L254,68" stroke="#1e293b" stroke-width="1"/>
+
+    <!-- Content Paragraph Blocks -->
+    <rect x="16" y="80" width="220" height="6" rx="1.5" fill="#3b82f6" fill-opacity="0.2"/>
+    <rect x="16" y="92" width="238" height="6" rx="1.5" fill="#334155" fill-opacity="0.4"/>
+    <rect x="16" y="104" width="180" height="6" rx="1.5" fill="#334155" fill-opacity="0.4"/>
+
+    <!-- Simulated Attachment Pill -->
+    <rect x="16" y="120" width="110" height="18" rx="4" fill="#1e293b" stroke="#10b981" stroke-opacity="0.5" stroke-width="1"/>
+    <rect x="24" y="125" width="8" height="8" rx="1" fill="#10b981"/>
+    <rect x="38" y="126" width="70" height="6" rx="1.5" fill="#94a3b8"/>
+  </g>
+</svg>
