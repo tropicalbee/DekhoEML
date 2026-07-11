@@ -62,26 +62,32 @@ cd dekhoeml
 ### Step 2: Initialize the Local API Backend
 Run the backend parser on your local environment to enable native parsing operations:
 ```bash
+# Navigate to backend directory
+cd backend
+
 # Configure virtual environment
 python -m venv venv
 source venv/bin/activate  # Windows: venv\Scripts\activate
 
-# Install required parsing dependencies
-pip install fastapi uvicorn python-multipart
+# Install dependencies
+pip install -r requirements.txt
 
-# Start the local ASGI server
-uvicorn main:app --host 127.0.0.1 --port 8000
+# Start the local server
+python main.py
 ```
 
 ### Step 3: Initialize the Frontend Application
 In a separate terminal directory, build and launch the browser framework:
 
 ```bash
-# Install node packages
+# Navigate to frontend directory
+cd frontend
+
+# Install package dependencies
 npm install
 
 # Start the local client server
-npm start
+npm run dev
 ```
 The application will automatically open at http://localhost:3000.
 
