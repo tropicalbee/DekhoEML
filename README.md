@@ -17,7 +17,7 @@
 
 DekhoEML is a secure, client-side email archive viewer. It allows users to open, inspect, and extract attachments from downloaded `.eml` files entirely within local memory. 
 
-Traditional email applications often automatically download external assets or execute background scripts when rendering email files, creating potential privacy risks. DekhoEML mitigates this by utilizing an isolated local sandbox interface to block tracker queries, redirects, and background processes. Because the parsing pipeline runs on the client device, your personal data never contacts external networks or database systems.
+Traditional email applications often automatically download external assets or execute background scripts when rendering email files, creating potential privacy risks. DekhoEML mitigates this by utilizing an isolated local sandbox interface to block tracker queries, redirects, and background processes. Because the parsing pipeline runs entirely on your machine, with no cloud calls, your personal data never contacts external networks or database systems.
 
 ---
 
@@ -29,7 +29,7 @@ Traditional email applications often automatically download external assets or e
 
 ## Core Characteristics
 
-*   **Local Processing Model:** MIME parsing and file reading occur strictly in the browser container.
+*   **Local Processing Model:** MIME parsing and file reading occur strictly on your local device.
 *   **Secure Rendering:** HTML renders inside sandboxed frames, disabling external link queries and web beacons.
 *   **Attachment Handling:** View images, PDFs, and text logs inline via clean modal views, or export them to raw formats safely.
 *   **Intuitive UI Workspace:** A structured, accessible layout built using modern dark themes for readable metadata inspection.
