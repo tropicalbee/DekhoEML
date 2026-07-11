@@ -21,6 +21,12 @@ Traditional email applications often automatically download external assets or e
 
 ---
 
+### Product Preview
+
+![DekhoEML Active Workspace](assets/screenshot.png)
+
+---
+
 ## Core Characteristics
 
 *   **Local Processing Model:** MIME parsing and file reading occur strictly in the browser container.
