@@ -326,7 +326,7 @@ function App() {
                 <div className="feature-icon"><LockIcon /></div>
                 <div className="feature-title">100% Local Processing</div>
                 <p className="feature-desc">
-                  Your files are parsed directly inside your browser's memory. No data is transmitted to cloud environments.
+                  Your files are parsed directly on your device, never leaving your machine. No data is transmitted to cloud environments.
                 </p>
               </div>
               <div className="feature-card">
